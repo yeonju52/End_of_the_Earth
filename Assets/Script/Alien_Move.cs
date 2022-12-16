@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Alien_Move : MonoBehaviour
 {
-    public float Speed = 0.01f;
-
-    int i = 0;
-    Animator animator;
+    public GameObject target;
+    private Animator animator;
 
     void Start()
     {
@@ -16,19 +14,18 @@ public class Alien_Move : MonoBehaviour
 
     void Update()
     {
-        // 270 : 1080 = 1 : 4
-        if(i % 1350 <= 270)
-        {   // 270
+        if (target.transform.position != Vector3.MoveTowards(transform.position, target.transform.position, 0.5f))
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.5f);
+
+            transform.LookAt(target.transform);
+            //Debug.Log(Vector3.MoveTowards(transform.position, target.transform.position, 1f));
+
+            animator.SetBool("off", false);
+        }
+        else
+        {
             animator.SetBool("off", true);
         }
-        else // walk
-        {   // 1080
-            if (i % 1350 > 1170) // 1350 - 90 * 2
-                transform.Rotate(0, 0.5f, 0);
-            animator.SetBool("off", false);
-            transform.Translate(Vector3.forward * Speed * Time.smoothDeltaTime);
-        }
-        //Debug.Log(i);
-        i++;
     }
 }
