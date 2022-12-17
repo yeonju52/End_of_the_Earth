@@ -6,21 +6,19 @@ public class ShowManual : MonoBehaviour
 {
     public GameObject ui;
     private int turn = 0;
-    private AudioSource audio;
+    private AudioSource beep;
     private GameObject player;
-    //AudioSource audio = GetComponent<AudioSource>();
-    //AudioSource audio = GetComponent<AudioSource>();
 
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        beep = GetComponent<AudioSource>();
         ui.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         // ¶ì¸µ
-        audio.Play();
+        beep.Play();
 
     }
 
