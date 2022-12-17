@@ -13,14 +13,14 @@ public class monitor : MonoBehaviour
 
     void Start()
     {
-        V0 = new Vector3(-2f, -1.1f, -0.1f);
-        V1 = new Vector3(-2f, -1.1f, 0.1f);
-        V2 = new Vector3(2f, -1.1f, 0.1f);
-        V3 = new Vector3(2f, -1.1f, -0.1f);
-        V4 = new Vector3(-2f, 1.1f, -0.1f);
-        V5 = new Vector3(-2f, 1.1f, 0.1f);
-        V6 = new Vector3(2f, 1.1f, 0.1f);
-        V7 = new Vector3(2f, 1.1f, -0.1f);
+        V0 = new Vector3(-4f, -2.1f, -0.1f);
+        V1 = new Vector3(-4f, -2.1f, 0.1f);
+        V2 = new Vector3(4f, -2.1f, 0.1f);
+        V3 = new Vector3(4f, -2.1f, -0.1f);
+        V4 = new Vector3(-4f, 2.1f, -0.1f);
+        V5 = new Vector3(-4f, 2.1f, 0.1f);
+        V6 = new Vector3(4f, 2.1f, 0.1f);
+        V7 = new Vector3(4f, 2.1f, -0.1f);
 
         newVertices = new Vector3[]
         {

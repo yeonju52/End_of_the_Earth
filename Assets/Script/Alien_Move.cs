@@ -28,9 +28,9 @@ public class Alien_Move : MonoBehaviour
         }
         else
         {
-            if (target.transform.position != Vector3.MoveTowards(transform.position, target.transform.position, 0.1f))
+            if (target.transform.position != Vector3.MoveTowards(transform.position, target.transform.position, 0.01f))
             {
-                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.1f);
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.01f);
 
                 transform.LookAt(target.transform);
                 //Debug.Log(Vector3.MoveTowards(transform.position, target.transform.position, 0.1f));
