@@ -8,7 +8,7 @@ public class PostEffect_Depth : MonoBehaviour
     Shader myShader;        // image effect shader 
     Material myMaterial;
 
-    public float depth = 1f;
+    public float depth = 10.0f;
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class PostEffect_Depth : MonoBehaviour
 
     private void Update()
     {
-        depth = Mathf.Clamp(depth, 0.0f, 1.0f);
+        depth = Mathf.Clamp(depth, 0.0f, 10.0f);
     }
 
     private void OnDisable()

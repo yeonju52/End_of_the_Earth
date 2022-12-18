@@ -26,6 +26,7 @@ public class ShowManual : MonoBehaviour
     {
         if (Input.GetKeyDown("u") && other.tag == "Player")
         {
+            Debug.Log("u");
             if (turn == 0)
             {
                 ui.SetActive(true);
