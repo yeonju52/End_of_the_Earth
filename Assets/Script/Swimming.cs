@@ -12,11 +12,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public Transform target;
         public float swimSpeed = 5f;
         [SerializeField] private MouseLook m_MouseLook;
+        //AudioSource sound;
+
         public float surface;
 
         void Start()
         {
             GetComponent<Rigidbody>().useGravity = false;    // false;
+            //sound = GetComponent<AudioSource>(); 
             m_MouseLook.Init(transform, target.transform);
             ResetVelocity();
         }
@@ -27,18 +30,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (transform.position.y > surface)
             {
                 transform.position -= target.up * swimSpeed * 0.5f * Time.deltaTime;
-                Debug.Log(surface);
             }
-            //else
-            //{
-            //    transform.position = new Vector3(transform.position.x, Terrain.activeTerrain.SampleHeight(transform.position), transform.position.y);
-            //}
+
             RotateView();
             isSwimming();
             isFloating();
             ResetVelocity();
         }
-
         
         private void FixedUpdate()
         {
@@ -78,6 +76,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 transform.position -= target.right * swimSpeed * Time.deltaTime;
             }
+
         }
 
         void isFloating()
