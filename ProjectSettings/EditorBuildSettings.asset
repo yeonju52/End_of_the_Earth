@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/_Ground.unity
     guid: 03a5920ee39d1904eaa24412429216fe
+  - enabled: 1
+    path: Assets/Scenes/_Undersea.unity
+    guid: b06b272df3137b84fb4b80722a5e1f73
+  - enabled: 1
+    path: Assets/Scenes/_Sky.unity
+    guid: 01c7ac6c2c9547449add7d3238221496
   m_configObjects: {}
