@@ -4,6 +4,7 @@ Shader "My/Quad_Waterfall"
     {
         _MainTex("Albedo (RGB)", 2D) = "white" {}
         _MainTex2 ("Albedo (RGB)", 2D) = "white" {}
+
     }
         SubShader
     {
