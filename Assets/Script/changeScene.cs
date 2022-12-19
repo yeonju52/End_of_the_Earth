@@ -10,4 +10,9 @@ public class changeScene : MonoBehaviour
     {
         SceneManager.LoadScene(nextScene);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        SceneManager.LoadScene(nextScene);
+    }
 }
