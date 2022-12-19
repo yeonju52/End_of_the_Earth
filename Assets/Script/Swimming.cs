@@ -10,7 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     public class Swimming : MonoBehaviour
     {
         public Transform target;
-        public float swimSpeed = 5f;
+        public float swimSpeed = 10f;
         [SerializeField] private MouseLook m_MouseLook;
         //AudioSource sound;
 
