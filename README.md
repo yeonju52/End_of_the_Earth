@@ -13,13 +13,15 @@
         4. Whirlpool in the sea with Mirror effect
         5. Moving alien, NPC character
 -> 4. Whirlpool in the sea with Mirror effect Image in _Undersea scenes
-![image](https://user-images.githubusercontent.com/77441026/230785776-e91e760b-3a2e-4582-b25e-1b8dfa4c2c1b.png)
+![Whirlpool](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e1bd69b-0fd1-457e-bbbb-52c22874dbb5/Untitled.png)
 
+-> Alien Image
+![Alien](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e1bd69b-0fd1-457e-bbbb-52c22874dbb5/Untitled.png)
 
 ## About Project
 + GameDisplay -> Full HD
 + Consist of 4 Scenes
-        + 1 Scenes/Intro
-        + 2 Scenes/_Ground
-        + 3 Scenes/_Undersea
-        + 4 Scenes/_Sky
+    + 1 Scenes/Intro
+    + 2 Scenes/_Ground
+    + 3 Scenes/_Undersea
+    + 4 Scenes/_Sky
